@@ -25,4 +25,5 @@ def contactus():
     db.contactus.insert_one(doc)
     return "Thank you for contacting us!"
 
-app.run(port=80)
+if __name__ == '__main__':
+    app.run(debug=True,port=80)
